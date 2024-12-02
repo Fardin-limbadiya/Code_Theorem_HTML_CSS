@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashboard</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+      <!-- Wrapper -->
+      <div class="flex h-screen">
+            <!-- Sidebar -->
+            <aside class="w-64 bg-black text-gray-200 flex flex-col p-4">
+                  <!-- Logo -->
+                  <div class="mb-6">
+                        <h1 class="text-xl font-bold">track<span class="text-cyan-500">Inc</span></h1>
+                  </div>
+                  <!-- Menu -->
+                  <nav class="flex-1 space-y-2">
+                        <a href="#"
+                              class="flex items-center gap-3 px-3 py-2 rounded bg-cyan-500 text-white"><span>Dashboard</span></a>
+                        <a href="#"
+                              class="flex items-center gap-3 px-3 py-2 hover:bg-gray-800 rounded"><span>Invoices</span></a>
+                        <a href="#"
+                              class="flex items-center gap-3 px-3 py-2 hover:bg-gray-800 rounded"><span>Proposals</span></a>
+                        <a href="#"
+                              class="flex items-center gap-3 px-3 py-2 hover:bg-gray-800 rounded"><span>Services</span></a>
+                        <a href="#"
+                              class="flex items-center gap-3 px-3 py-2 hover:bg-gray-800 rounded"><span>Transactions</span></a>
+                        <a href="#"
+                              class="flex items-center gap-3 px-3 py-2 hover:bg-gray-800 rounded"><span>Projects</span></a>
+                        <a href="#"
+                              class="flex items-center gap-3 px-3 py-2 hover:bg-gray-800 rounded"><span>Customers</span></a>
+                  </nav>
+                  <!-- Footer -->
+                  <div class="mt-6">
+                        <a href="#"
+                              class="flex items-center gap-3 px-3 py-2 hover:bg-gray-800 rounded"><span>Settings</span></a>
+                        <a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-800 rounded"><span>Log
+                                    Out</span></a>
+                  </div>
+            </aside>
+            <!-- Main Content -->
+            <!-- Header -->
+            <main class="flex-1 p-6">
+                  <!-- Header -->
+                  <header class="flex justify-between items-center mb-6">
+                        <div>
+                              <h2 class="text-2xl font-semibold text-gray-800">Hi, Welcome back <span
+                                          class="text-green-500">Robert!</span></h2>
+                        </div>
+                        <div class="flex items-center gap-4">
+                              <input type="text" placeholder="Search"
+                                    class="border rounded-md px-4 py-2 focus:outline-none" />
+                              <button class="fa-solid text-2xl text-black "><i class="fa-solid fa-bell"></i></button>
+                              <img src="./assets/avtar.png" alt="Avatar" class="w-10 h-10 rounded-full" />
+                        </div>
+                  </header>
+                  <!-- Finance Overview -->
+                  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                        <!-- Sales Section -->
+                        <div class="p-4 bg-cyan-100 rounded-lg shadow-md text-center flex justify-between items-center">
+                              <!-- Text Content -->
+                              <div class="text-left w-2/3">
+                                    <h3 class="text-xl font-semibold">$2,77,120</h3>
+                                    <p class="text-gray-600">Sales</p>
+                              </div>
+                              <!-- Circular Image on the Right -->
+                              <div class="w-16 h-16 rounded-full overflow-hidden">
+                                    <img src="./assets/sales.png" alt="Sales" class="object-cover w-full h-full">
+                              </div>
+                        </div>
+                        <!-- Expense Section -->
+                        <div
+                              class="p-4 bg-purple-100 rounded-lg shadow-md text-center flex justify-between items-center">
+                              <!-- Text Content -->
+                              <div class="text-left w-2/3">
+                                    <h3 class="text-xl font-semibold">$60,100</h3>
+                                    <p class="text-gray-600">Expense</p>
+                              </div>
+                              <!-- Circular Image on the Right -->
+                              <div class="w-16 h-16 rounded-full overflow-hidden">
+                                    <img src="./assets/expense.svg" alt="Expense" class="object-cover w-full h-full">
+                              </div>
+                        </div>
+                        <!-- Profit Section -->
+                        <div
+                              class="p-4 bg-yellow-100 rounded-lg shadow-md text-center flex justify-between items-center">
+                              <!-- Text Content -->
+                              <div class="text-left w-2/3">
+                                    <h3 class="text-xl font-semibold">$57,230</h3>
+                                    <p class="text-gray-600">Profit</p>
+                              </div>
+                              <!-- Circular Image on the Right -->
+                              <div class="w-16 h-16 rounded-full overflow-hidden">
+                                    <img src="./assets/profit.svg" alt="Profit" class="object-cover w-full h-full">
+                              </div>
+                        </div>
+                        <!-- Income Section -->
+                        <div
+                              class="p-4 bg-green-100 rounded-lg shadow-md text-center flex justify-between items-center">
+                              <!-- Text Content -->
+                              <div class="text-left w-2/3">
+                                    <h3 class="text-xl font-semibold">$1,60,124</h3>
+                                    <p class="text-gray-600">Income</p>
+                              </div>
+                              <!-- Circular Image on the Right -->
+                              <div class="w-16 h-16 rounded-full overflow-hidden">
+                                    <img src="./assets/income.png" alt="Income" class="object-cover w-full h-full">
+                              </div>
+                        </div>
+                  </section>
+                  <!-- Current Projects -->
+                  <section>
+                        <div class="flex justify-between items-center mb-4">
+                              <h3 class="text-lg font-semibold text-gray-800">Current Projects</h3>
+                              <button class="bg-green-500 text-white px-4 py-2 rounded-lg shadow-md">Create</button>
+                        </div>
+                        <table class="w-full text-left bg-white rounded-lg shadow-md">
+                              <thead class="bg-gray-100">
+                                    <tr>
+                                          <th class="px-4 py-2 text-sm text-gray-700">Project Name</th>
+                                          <th class="px-4 py-2 text-sm text-gray-700">Customer</th>
+                                          <th class="px-4 py-2 text-sm text-gray-700">Sent Date</th>
+                                          <th class="px-4 py-2 text-sm text-gray-700">Amount</th>
+                                          <th class="px-4 py-2 text-sm text-gray-700">Status</th>
+                                    </tr>
+                              </thead>
+                              <tbody>
+                                    <tr class="border-t">
+                                          <td class="px-4 py-2">Travel App Design</td>
+                                          <td class="px-4 py-2">Jacob Jones</td>
+                                          <td class="px-4 py-2">28 Oct 2022</td>
+                                          <td class="px-4 py-2">$240.90</td>
+                                          <td class="px-4 py-2 text-green-600">Sent</td>
+                                    </tr>
+                                    <tr class="border-t">
+                                          <td class="px-4 py-2">Redesign food Delivery app</td>
+                                          <td class="px-4 py-2">CR7</td>
+                                          <td class="px-4 py-2">8 Oct 2022</td>
+                                          <td class="px-4 py-2">$300.90</td>
+                                          <td class="px-4 py-2 text-green-600">Paid</td>
+                                    </tr>
+                                    <tr class="border-t">
+                                          <td class="px-4 py-2">Music app design</td>
+                                          <td class="px-4 py-2">Jone</td>
+                                          <td class="px-4 py-2">17 nov 2022</td>
+                                          <td class="px-4 py-2">$250.90</td>
+                                          <td class="px-4 py-2 text-red-600">Rejected</td>
+                                    </tr>
+                                    <!-- Add more rows -->
+                              </tbody>
+                        </table>
+                  </section>
+                  <section class="mt-4">
+                        <h2 class="text-xl font-semibold mb-4 text-gray-800 text-left">Events</h2>
+                        <div class="flex justify-start">
+                              <div class="space-y-4 max-w-2xl w-full">
+                                    <!-- Event 1 -->
+                                    <div class="flex items-center justify-between bg-white p-2 rounded-lg shadow-md">
+                                          <div class="flex items-center space-x-3">
+                                                <img src="./assets/avtar.png" alt="Wade Warren"
+                                                      class="w-10 h-10 rounded-full">
+                                                <div>
+                                                      <p class="font-semibold">Wade Warren</p>
+                                                      <p class="text-blue-600">🎂 Birthday <span class="text-gray-600">•
+                                                                  Today</span></p>
+                                                </div>
+                                          </div> <button class="bg-blue-500 text-white px-4 py-2 rounded">Wish</button>
+                                    </div>
+                                    <!-- Event 2 -->
+                                    <div class="flex items-center justify-between bg-white p-2 rounded-lg shadow-md">
+                                          <div class="flex items-center space-x-3">
+                                                <img src="./assets/avtar.png" alt="Wade Warren"
+                                                      class="w-10 h-10 rounded-full">
+                                                <div>
+                                                      <p class="font-semibold">Wade Warren</p>
+                                                      <p class="text-blue-600">🎉 Joining Us <span
+                                                                  class="text-gray-600">• Today</span></p>
+                                                </div>
+                                          </div>
+                                          <button
+                                                class="bg-blue-500 text-white px-4 py-2 rounded">Congratulations</button>
+                                    </div>
+                                    <!-- Event 3 -->
+                                    <div class="flex items-center justify-between bg-white p-2 rounded-lg shadow-md">
+                                          <div class="flex items-center space-x-3">
+                                                <img src="./assets/avtar.png" alt="Wade Warren"
+                                                      class="w-10 h-10 rounded-full">
+                                                <div>
+                                                      <p class="font-semibold">Wade Warren</p>
+                                                      <p class="text-blue-600">💼 Work Anniversary <span
+                                                                  class="text-gray-600">• 7 September, 2022</span>
+                                                      </p>
+                                                </div>
+                                          </div>
+                                          <button class="bg-blue-500 text-white px-4 py-2 rounded">Celebrate</button>
+                                    </div>
+                              </div>
+                        </div>
+                  </section>
+            </main>
+      </div>
+</body>
+</html>
